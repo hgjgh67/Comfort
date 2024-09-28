@@ -4,7 +4,7 @@ body
 font-family: Impact, sans-serif;
 background-image:url('phone.jpg');
 background-size:120%,
-background-repeat:repeat;
+background-repeat:no-repeat;
 }
 {
     font-family: F16;
