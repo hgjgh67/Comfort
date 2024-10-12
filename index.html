@@ -11,10 +11,14 @@
 <img src="T1.jpg" alt=class="img-example" width=500 height=200
 
 
-<img id="img" src="https://meat-expert.ru/files/uploads/obzor/_2023/30/01.jpg">
+<button>Покорми меня!</button>
+		<p>Горошка и морковки хватит, МММ... салатик. МММ... отлично...МММ... салатик</p>
 
-    <script>
-      var cat = document.querySelector("img");
+		<img id="myImg" src="https://meat-expert.ru/files/uploads/obzor/_2023/30/01.jpg" style="position: relative">
+
+</p>
+		<script>
+			var cat = document.querySelector("img");
 var angle = 0, lastTime = null;
 function animate(time) {
 if (lastTime != null)
@@ -36,10 +40,6 @@ function myFunction() {
   alert('Ouch!!!');
 }
 
-requestAnimationFrame(animate);
-
-
-    </script>	
 </body>
 
 	
