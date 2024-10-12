@@ -1,35 +1,34 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-
 <body>
-<img src="Honey.jpg" alt=class="img-example" width=1896 height=340>
-<img src="T1.jpg" alt=class="img-example" width=500 height=200
-<img id="myImg" src="https://meat-expert.ru/files/uploads/obzor/_2023/30/01.jpg">
-	
-<p style="text-align: center">
-<button>Покорми меня!</button>
-		<p>Горошка и морковки хватит, МММ... салатик. МММ... отлично...МММ... салатик</p>
+
+  
+
+<button>Нажми чтобы перейти на следуйщую стадию развития</button>
+  
+  
+
+  <p style="text-align: center">
+
+    <h1><button>Нажми чтобы перейти на новый этап развития</button></h1>
+    <p>ЭТО ЖИВАЯ КАРТОШКА!??!?!</p>
+
+    <img id="myImg" src="https://cdnn21.img.ria.ru/images/07e6/0b/08/1830032883_0:157:3083:1891_1920x1080_80_0_0_b10983f90772b7792b5059074e8df494.jpg" style="position: relative">
+
 </p>
-		<script>
-			var cat = document.querySelector("img");
+    <script>
+      var cat = document.querySelector("img");
 var angle = 0, lastTime = null;
 function animate(time) {
 if (lastTime != null)
 angle += (time - lastTime) * 0.002;
 lastTime = time;
-cat.style.top = (Math.cos(angle) * 50      ) + "px";
-cat.style.left = (Math.sin(angle) * 200) + "px";
+cat.style.top = (Math.cos(angle) * 5000      ) + "px";
+cat.style.left = (Math.sin(angle) * 2000) + "px";
 requestAnimationFrame(animate);
 }
 
 var button = document.querySelector("button");
 button.addEventListener("click", function() {
-alert("НЕ ТРОГАЙ МОИ ПЕЛЬМЕНИ!!!!");
+alert("фу как тебе не стыдно");
 });
 
 document.getElementById('myImg').onclick = myFunction;
@@ -37,9 +36,3 @@ document.getElementById('myImg').onclick = myFunction;
 function myFunction() {
   alert('Ouch!!!');
 }
-
-requestAnimationFrame(animate);
-		</script>
-</body>
-
-	
