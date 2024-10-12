@@ -10,18 +10,36 @@
 <img src="T1.jpg" alt=class="img-example" width=500 height=200
 <img src="Logo.jpg" alt=class="img-example" width=100 height=100
 
-	<img id="myImg" src="Logo.jpg">
-</body>
+<img id="myImg" src="https://meat-expert.ru/files/uploads/obzor/_2023/30/01.jpg" style="position: relative">
 
-	<script>
-		var cat = document.querySelector("img");
+</p>
+    <script>
+      var cat = document.querySelector("img");
 var angle = 0, lastTime = null;
 function animate(time) {
 if (lastTime != null)
 angle += (time - lastTime) * 0.002;
 lastTime = time;
-cat.style.top = (Math.sin(angle) * 1) + "px";
-cat.style.left = (Math.cos(angle) * 10) + "px";
+cat.style.top = (Math.cos(angle) * 50      ) + "px";
+cat.style.left = (Math.sin(angle) * 200) + "px";
 requestAnimationFrame(animate);
 }
-  
+
+var button = document.querySelector("button");
+button.addEventListener("click", function() {
+alert("НЕ ТРОГАЙ МОИ ПЕЛЬМЕНИ!!!!");
+});
+
+document.getElementById('myImg').onclick = myFunction;
+
+function myFunction() {
+  alert('Ouch!!!');
+}
+
+requestAnimationFrame(animate);
+
+
+    </script>	
+</body>
+
+	
